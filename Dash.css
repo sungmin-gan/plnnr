@@ -1,0 +1,191 @@
+#dashWrap {
+    overflow: hidden;
+}
+
+#dashAssignmentsSection {
+    width: 100%;
+    display: flex;
+    
+}
+
+.dashUpcoming {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashUpcomingTitle {
+    height: 2.5vh;
+    font-size: 1.25em;
+    padding: 16px 0 16px 16px;
+    color: whitesmoke; 
+    font-weight: 600;
+    width: calc(100% - 16px);
+}
+
+.dashAssignments {
+    overflow: auto;
+    background: whitesmoke;
+    height: 75vh;
+}
+
+#addCourseForm {
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    position: relative;
+    overflow: hidden;
+}
+
+#addCourseFormContainer {
+    overflow: auto;
+    height: 75vh;
+}
+
+input {
+    border: 1px solid lightgrey;
+    outline: none;
+}
+
+#addCourseButton {
+    position: absolute;
+    right: 16px;
+    top: 75px;
+    outline: none;
+    border: none;
+    background: grey;
+    color: white;
+    padding: 0.5em 1em;
+    transition: all 0.25s linear;
+}
+
+#addCourseButton:hover {
+    background: #444;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+.addCourseColor {
+    background: #444;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+.addCourseSubTitle {
+    font-size: 1.25em;
+    padding: 16px 0 16px 16px;
+}
+
+.basicInfo {
+    height: 160px;
+    padding: 0 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.nameLocationFields {
+    display: flex;
+}
+
+.nameLocationFields div {
+    margin: 0 2em 0 0;
+}
+
+.textInput {
+    display: block;
+    width: 128px
+}
+
+.daysInput {
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.daysInput input { 
+    margin-right: 1em;
+ }
+
+.classTimes {
+    display: flex;
+}
+
+.classTimes div {
+    display: flex;
+}
+
+.classTimes select {
+    border: 1px solid lightgrey;
+    margin: 0 2em 0 0.5em;
+    outline: none
+}
+
+.gradeBreakdowns {
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 2em;
+}
+
+.gradeBreakdownsWrap {
+    display: flex;
+    padding: 0 2em 0 2em;
+    height: 98px;
+}
+
+.breakdownColumn {
+    display: flex;
+    margin-right: 2em;
+}
+
+.labels, .inputs {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.labels {
+    margin: 0 1em 0 0;
+}
+
+.labels label {
+    margin-bottom: 0.25em
+}
+
+.inputs input {
+    width: 20px;
+    margin-bottom: 0.5em
+}
+
+.instructorInfoForm {
+    padding: 0 2em 2em 2em;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#officeHoursTimes {
+    margin-top: 0.5em;
+}
+
+#gradesError {
+    margin: 0.5em 0 0 32px;
+    font-size: 0.8em;
+    color: darkred;
+}   
+
+#checkError {
+    margin: 0 0 0 0;
+    font-size: 0.8em;
+    color: darkred;
+}   
+
+.timeInput {
+    width: 20px;
+}

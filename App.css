@@ -1,0 +1,358 @@
+#seshID { font-size: 12px }
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./imgs/library.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  font-size: 16px;
+  color: whitesmoke;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  grid-column: 1/ span 7;
+  grid-row: 1 / span 1;
+  background:#222;
+  padding: 0.5rem 4vw 0.5rem 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#plnnr {
+  font-size: calc(1em + 0.75vw);
+  font-family: 'Pacifico', cursive
+}
+
+#plnnr:hover {
+  cursor: pointer
+}
+
+.navBar {
+  grid-column: 2/ span 1;
+  grid-row: 3 / span 1;
+  background: none;
+}
+
+.contentArea {
+  grid-column: 4/ span 1;
+  grid-row: 3 / span 1;
+  height: 100%;
+  color: #444;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.navList div {
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+}
+
+.navTab {
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  padding: 1em 1em 1em 2.5em;
+  margin-bottom: 7.5px;
+  color: #333;
+  border-right: none;
+  transition: 0.25s linear;
+}
+
+.navTab span {
+  font-weight: normal;
+}
+
+.back0 { background: #333; transition: all 0.5s linear; color: whitesmoke} 
+.back1 { background: #333; transition: all 0.5s linear; color: whitesmoke} 
+.back2 { background: #333; transition: all 0.5s linear; color: whitesmoke} 
+.back3 { background: #333; transition: all 0.5s linear; color: whitesmoke} 
+.back4 { background: #333; transition: all 0.5s linear; color: whitesmoke} 
+
+.assignment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding: 1em 0 1em 2em;
+  color: #444;
+  position: relative;
+  height: 50px;
+}
+
+.assignment i { font-size: 2em }
+
+#catIcon {
+  width: 20%;
+  margin-left: 0.75em; 
+  text-align: center;
+}
+
+.assignmentInfo { width: 35% }
+
+.hw { font-weight: bold }
+
+.date { font-size: 1.5em }
+
+.doneBox {
+  border-left: 1px solid lightgrey;
+  padding: 0 1em 0 1em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.25s linear;
+}
+
+.doneBox:hover {
+  color: rgba(20, 153, 82, 0.87);
+  cursor: pointer;
+}
+
+.tabUnselected:hover {
+  transform: translateX(-2.5%);
+  cursor: pointer;
+}
+
+.inputGradeBox {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1em;
+  padding-left: 1em;
+  border-left: 1px solid lightgrey;
+}
+
+.inputLine {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.inputGradeBox input {
+  width: 30px;
+  border: 1px solid lightgrey;
+}
+
+.inputLabels {
+  font-size: 0.75em
+}
+
+.assInfoSubmitted {
+  margin-left: 2em;
+}
+
+.assignment button {
+  margin-right: 1em;
+  background: grey;
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border: none;
+  outline: none;
+}
+
+.assignment button:hover {
+  cursor: pointer;
+  background: #444;
+  color: whitesmoke;
+}
+
+.assGraded {
+  justify-content: space-between;
+}
+
+.assInfoGraded {
+  width: auto;
+  padding-right: 2em;
+}
+
+.scoreBox { margin-right: 1em }
+
+.assignmentInfo input {
+  width: 9em;
+  border: 1px solid lightgrey;
+  outline: none;
+  padding: 0.25em;
+}
+
+.assignmentInfo input:disabled {
+  border: none;
+  outline: none;
+  color: #444;
+}
+
+.assignmentDueDate input {
+  border: 1px solid lightgrey;
+  width: 9.5em;
+}
+
+.obAdd {
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s linear;
+}
+
+.obAdd:hover {
+  opacity: 0.75;
+}
+
+.selectCat {
+  width: 9.65em;
+  border: 1px solid lightgrey;
+  color: #444;
+  outline: none;
+}
+
+.hidden { display: none }
+
+.cancel {
+  color: darkred;
+  transform: rotate(45deg);
+}
+
+#addBox {
+  background: none;
+  color: grey;
+  transition: all 0.25s linear;
+}
+
+#addBox:hover { color:#444  }
+
+.addCourseButton { 
+  background: #444; 
+  color: whitesmoke;
+  font-weight: normal; 
+  transition: all 0.25s linear;
+}
+
+.addCourseButton i { 
+  margin-right: 1em;
+  transition: all 0.25s linear;
+}
+
+.addCourseButton:hover {
+  cursor: pointer;
+  background: grey;
+  color: white;
+}
+
+#cancelAddCourseBox {
+  background: whitesmoke;
+  color: #444;
+  font-weight: bold;
+}
+
+#cancelAddCourse {
+  transform: rotate(45deg);
+  color: darkred;
+}
+
+#cancelAddCourseBox:hover {
+  background: lightgrey;
+}
+
+._back0 { border-top: 5px solid #333} 
+._back1 { border-top: 2px solid #333} 
+._back2 { border-top: 2px solid #333} 
+._back3 { border-top: 2px solid #333} 
+._back4 { border-top: 2px solid #333} 
+
+.dashSideContent {
+  grid-column: 6/ span 1;
+  grid-row: 3 / span 1;
+}
+
+.dashArticle {
+  height: 22.5vh;
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wikiImg {
+  width: 15vh;
+  height: auto;
+}
+
+.wikiContent {
+  width: 57.5%;
+  position: relative;
+}
+
+.wikiTitle {  
+  font-weight: bold;
+}
+
+.wikiText {
+  color: #444
+}
+
+/** Mobile Rendering **/
+
+#headerNav {
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  margin-left: calc(50vw - 100px - 4vw)
+}
+
+.navText {
+  padding: 0.5em 1em;
+  background: #444;
+  color: whitesmoke;
+}
+
+.headerSelect {
+  width: 200px;
+  background: whitesmoke;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+
+.headerSelect div {
+  border-bottom: 1px solid lightgrey;
+  background: whitesmoke;
+  color: #444;
+  padding: 0.5em 1em;
+}
+
+.headerSelect div:hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background: #444;
+}
+
+#headerNav:hover .headerSelect {
+  display: block;
+}
+
+.gridWidthL {
+  grid-template: auto minmax(10px,1fr) minmax(700px, 900px) minmax(10px,1fr) / 1fr 200px 20px 400px 10px 400px 1fr;
+}
+
+.gridWidthM {
+  grid-template: auto minmax(10px,1fr) minmax(700px, 900px) minmax(10px,1fr) / 1fr 1fr 20px 400px 10px 400px 2fr;
+}
+
+.gridWidthS {
+  grid-template: 7.5vh 0px 92.5vh 5vh / 1fr 1fr 1fr 100vw 1fr 1fr 1fr;
+}
+
+#headerCourseAdd {
+  transition: all 0.5s linear;
+}
