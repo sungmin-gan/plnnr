@@ -1,0 +1,234 @@
+.classInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #444;
+    font-weight: normal;
+}
+
+.titleWrap {
+    height: auto;
+    padding: 1px 0;
+}
+
+h6 {
+    font-size: 1.25em;
+    margin: 16px 0 16px 16px; 
+    font-weight: normal;
+}
+
+.subInfo { 
+    font-size: 0.8em; 
+    font-weight: normal;
+}
+
+.courseOptions {
+    margin: 0 0 16px 1em ;
+    display: flex;
+}
+
+.courseOptions div {
+   padding: 0.25em 1em 0.25em 1em;
+   margin-right: 0.25em;
+}
+
+.courseOptions div:hover {
+    cursor: pointer;
+}
+
+.gBookOption {
+    border-radius: 5px 0 0 5px;
+}
+
+.instructorOption {
+    border-radius: 0 5px 5px 0;
+}
+
+.gBookOption:hover, .instructorOption:hover {
+    cursor: pointer;
+}
+
+
+.infoBox {
+    height: 20vh;
+    background: whitesmoke;
+    position: relative;
+}
+
+.assignmentsBox {
+    background: whitesmoke;
+    height: 25vh;
+    overflow: auto;
+}
+
+.profInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.profInfo i { font-size: 3em}
+
+.profName { font-weight: bold }
+
+.infoGrid {
+    display: flex;
+    flex-direction: column;
+    font: 400 13.3333px Arial;
+}
+
+.infoGrid input {
+    border: 1px solid lightgrey;
+    color: #444;
+    padding: 0.25em;
+}
+
+.infoGrid input:disabled {
+    border: none;
+    background: whitesmoke;
+    color: #444;
+    opacity: 1;
+    -webkit-text-fill-color: #444;
+}
+
+.infoGrid div {
+    margin-left: 0.25em;
+}
+
+.gradebook {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    position: relative;
+}
+
+.grades {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    height: 160px;
+    margin-top: 0.5em;
+    border-top: 1px solid lightgrey;
+}
+
+.gradebookLine {
+    padding-left: 1em;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid lightgrey;
+}
+
+.assignmentTitle {
+    margin-right: 1em;
+}
+
+.catTitle {
+    font-weight: bold;
+    padding: 0.25em 0 0.25em 0.5em;
+    background: lightgrey;
+    width: 100px;
+}
+
+.dropdownWrap {
+    width: 100px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    background: lightgrey;
+    position: absolute;
+    top: 32px;
+    display: none;
+}
+
+.dropdown div {
+    padding: 0.25em 0 0.25em 0.5em;
+    width: 100px;
+}
+
+.dropdown div:hover {
+    cursor: pointer;
+    background: #444;
+    color: whitesmoke;
+}
+
+.dropdownWrap:hover .dropdown {
+    cursor: pointer;
+    display: block;
+}
+
+.dropdownWrap:hover { cursor: default }
+
+.nothingMsg {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    background: #444;
+    color: whitesmoke;
+}
+
+.unselected {
+    background: whitesmoke;
+    color: #444;
+    transition: all 0.5s;
+}
+
+.unselected:hover {
+    background: #444;
+    color: whitesmoke;
+}
+
+#editProf {
+    font-size: 16px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    padding: 0.25em;
+}
+
+#editProf:hover {
+    cursor: pointer;
+    background: lightgrey;
+    z-index: 2;
+}
+
+#profUpdate {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    padding: 0.25em;
+    border: none;
+    outline: none;
+    background: grey;
+    color: white;
+}
+
+#profUpdate:hover {
+    cursor: pointer;
+    background: #444;
+    color: whitesmoke;
+}
+
+.courseInfoSection, #obligationsSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.marginS { margin-bottom: 0px }
+
+
+
+
+
+
+
